@@ -80,12 +80,12 @@ class _HistoryKehadiranPageState extends State<HistoryKehadiranPage> {
                   vertical: 6,
                 ),
                 child: ListTile(
-                  title: Text(formatTanggal(k.tanggal)), // ✅ DateTime → String
+                  title: Text(formatTanggal(k.tanggal)), 
                   subtitle: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text('Jam Masuk: ${k.jamMasuk ?? '-'}'),
-                      Text('Mode: ${k.modeKerja ?? '-'}'), // ✅ null safe
+                      Text('Mode: ${k.modeKerja ?? '-'}'), 
                       if (k.terlambat && k.keterlambatan != null)
                         Text(
                           'Terlambat: ${k.keterlambatan}',
