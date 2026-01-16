@@ -20,8 +20,8 @@ class WajahService {
   final res = await http.post(
     Uri.parse('${Api.baseUrl}/wajah'),
     headers: {
-      ...Api.authHeader(token!),       // tetap pakai auth header
-      'Content-Type': 'application/json', // wajib untuk JSON
+      ...Api.authHeader(token!),       
+      'Content-Type': 'application/json', 
     },
     body: jsonEncode({
       'data': data.toList(),
